@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-class RadioTab extends StatelessWidget {
-  const RadioTab({super.key});
+class SebhaTab extends StatelessWidget {
+  static const String routeName = 'sebha-screen';
+  const SebhaTab({super.key});
 
   @override
   Widget build(BuildContext context) {

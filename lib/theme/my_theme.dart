@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class MyTheme {
   // colors - light - dark
   static Color blackColor =  Color(0xff242424);
+  static Color WhiteColor =  Color(0xffffffff);
   static Color primaryLight = const Color(0xffB7935F);
   static ThemeData lightMode = ThemeData(
       primaryColor: primaryLight,
@@ -16,6 +17,11 @@ class MyTheme {
         titleLarge: TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
+        titleMedium: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.w400,
           color: Colors.black,
         ),
       ),
