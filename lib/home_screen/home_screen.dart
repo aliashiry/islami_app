@@ -4,7 +4,7 @@ import 'package:islami_app/home_screen/quran/quran_tab.dart';
 import 'package:islami_app/home_screen/radio/radio.dart';
 import 'package:islami_app/home_screen/sebha/sebha_tab.dart';
 import 'package:islami_app/theme/my_theme.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home-screen';
 
@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Scaffold(
           appBar: AppBar(
             title:
-                Text('Islami', style: Theme.of(context).textTheme.titleLarge),
+                Text(AppLocalizations.of(context)!.app_title, style: Theme.of(context).textTheme.titleLarge),
           ),
           bottomNavigationBar: Theme(
             data: Theme.of(context).copyWith(
@@ -36,19 +36,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   selectedIndex = index;
                   setState(() {});
                 },
-                items: const [
+                items:  [
               BottomNavigationBarItem(
-                  icon: ImageIcon(AssetImage('assets/images/icon_quran.png')),
-                  label: 'Quran'),
+                  icon: const ImageIcon(AssetImage('assets/images/icon_quran.png')),
+                  label: AppLocalizations.of(context)!.quran),
               BottomNavigationBarItem(
-                  icon: ImageIcon(AssetImage('assets/images/icon_hadeth.png')),
-                  label: 'Hadeth'),
+                  icon: const ImageIcon(AssetImage('assets/images/icon_hadeth.png')),
+                  label: AppLocalizations.of(context)!.hadeth),
               BottomNavigationBarItem(
-                  icon: ImageIcon(AssetImage('assets/images/icon_sebha.png')),
-                  label: 'Sebha'),
+                  icon: const ImageIcon(AssetImage('assets/images/icon_sebha.png')),
+                  label: AppLocalizations.of(context)!.sebha),
               BottomNavigationBarItem(
-                  icon: ImageIcon(AssetImage('assets/images/icon_radio.png')),
-                  label: 'Radio'),
+                  icon: const ImageIcon(AssetImage('assets/images/icon_radio.png')),
+                  label: AppLocalizations.of(context)!.radio),
             ]),
           ),
           body: tabs[selectedIndex],
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> tabs= [
     QuranTab(),
     HadethTab(),
-    SebhaTab(),
-    RadioTab(),
+    const SebhaTab(),
+    const RadioTab(),
   ];
 }

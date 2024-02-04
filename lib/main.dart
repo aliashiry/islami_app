@@ -7,14 +7,18 @@ import 'package:islami_app/home_screen/quran/sura_details_screen.dart';
 import 'package:islami_app/home_screen/radio/radio.dart';
 import 'package:islami_app/home_screen/sebha/sebha_tab.dart';
 import 'package:islami_app/theme/my_theme.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'home_screen/hadeth/hadeth_details_screen.dart';
 
-void main() {
+void main() async{
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  runApp(const MyApp());
+  await Future.delayed(const Duration(seconds: 1));
+  await Future.delayed(const Duration(seconds: 1));
+  await Future.delayed(const Duration(seconds: 1));
   FlutterNativeSplash.remove();
+  runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -36,6 +40,9 @@ class MyApp extends StatelessWidget {
         HadethDetailsScreen.routeName: (context) => HadethDetailsScreen(),
       },
       theme: MyTheme.lightMode,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      locale:Locale('ar'),
     );
   }
 }

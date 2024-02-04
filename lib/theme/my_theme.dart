@@ -28,7 +28,7 @@ class MyTheme {
       bottomNavigationBarTheme:
           BottomNavigationBarThemeData(
             selectedItemColor: blackColor,
-              showUnselectedLabels: true,
+              //showUnselectedLabels: true,
               backgroundColor: primaryLight),
 
   );

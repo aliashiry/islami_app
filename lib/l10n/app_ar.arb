@@ -1,0 +1,14 @@
+{
+"app_title" : "اسلامي",
+"sura_name":"اسم الصورة",
+"hadeth_name":"اسم الحديث",
+"quran":"القران",
+"hadeth":"الحديث",
+"sebha":"السبحة",
+"radio":"الراديو",
+"number_of_tasbeeh":"عدد التسبيحات",
+"subhan_allah":"سبحان الله",
+"alhamdulillah":"الحمد لله",
+"allah_akbar":"الله أكبر",
+"quran_radio":"إذاعة القرآن الكريم"
+}
