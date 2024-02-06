@@ -24,6 +24,11 @@ class MyTheme {
           fontWeight: FontWeight.w400,
           color: Colors.black,
         ),
+        titleSmall: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
       ),
       bottomNavigationBarTheme:
           BottomNavigationBarThemeData(
