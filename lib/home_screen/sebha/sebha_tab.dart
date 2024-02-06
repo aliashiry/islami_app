@@ -13,7 +13,7 @@ class SebhaTab extends StatefulWidget {
 
 class _SebhaTabState extends State<SebhaTab> {
   double turns = 0;
-  List<String> tasbeh = ['سبحان الله', 'الحمد لله', 'الله اكبر', 'أستغفر الل '];
+  List<String> tasbeh = ['سبحان الله', 'الحمد لله', 'الله اكبر','أستغفر الله'];
   int counter = 0;
   int index = 0;
 
@@ -40,11 +40,11 @@ class _SebhaTabState extends State<SebhaTab> {
                       setState(() {
                         turns += 1 / 4;
                         counter++;
-                        if (counter == 33) {
+                        if (counter == 34) {
                           counter = 0;
                           index++;
                         }
-                        if (index == 3) {
+                        if (index == 4) {
                           index = 0;
                         }
                       });
