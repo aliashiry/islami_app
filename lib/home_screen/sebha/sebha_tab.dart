@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/home_screen/providers/app_config_provider.dart';
 import 'package:islami_app/theme/my_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 
 class SebhaTab extends StatefulWidget {
   static const String routeName = 'sebha-screen';

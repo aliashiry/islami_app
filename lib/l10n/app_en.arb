@@ -10,5 +10,12 @@
 "subhan_allah":"Subhan Allah",
 "alhamdulillah":"Alhamdulillah",
 "allah_akbar":"Allah Akbar",
-"quran_radio":"Quran Radio"
+"quran_radio":"Quran Radio",
+"settings" : "Settings",
+"language" : "Language",
+"english" : "English",
+"arabic" : "Arabic",
+"theme" : "Theme",
+"light" : "Light",
+"dark" : "Dark"
 }

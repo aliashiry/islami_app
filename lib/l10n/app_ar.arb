@@ -10,5 +10,13 @@
 "subhan_allah":"سبحان الله",
 "alhamdulillah":"الحمد لله",
 "allah_akbar":"الله أكبر",
-"quran_radio":"إذاعة القرآن الكريم"
+"quran_radio":"إذاعة القرآن الكريم",
+"settings" : "الاعدادات",
+"settings" : "Settings",
+"language" : "اللغة",
+"english" : "الانجليزية",
+"arabic" : "العربية",
+"theme" : "النمط",
+"light" : "مضئ",
+"dark" : "ليلي"
 }
